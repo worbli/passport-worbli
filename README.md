@@ -16,16 +16,17 @@ refresh token, as well as `profile` which contains the authenticated user's
 Worbli profile. The `verify` callback must call `cb` providing a user to
 complete authentication.
 
-```js
-passport.use(new WorbliStrategy({
-    clientID: WORBLI_APP_ID,
-    clientSecret: WORBLI_APP_SECRET,
-    callbackURL: "http://localhost:3000/worbli/callback-oauth2"
-  },
-  function(accessToken, refreshToken, profile, cb) {
-  }
-));
-```
+    ```js
+    passport.use(new WorbliStrategy({
+            clientID: WORBLI_APP_ID,
+            clientSecret: WORBLI_APP_SECRET,
+            callbackURL: "http://localhost:3000/worbli/callback-oauth2",
+            scope: "user.email user.fname user.lname"
+        },
+        function(accessToken, refreshToken, profile, cb) {
+        }
+    ));
+    ```
 
 #### Authenticate Requests
 
@@ -35,14 +36,14 @@ authenticate requests.
 For example, as route middleware in an [Express](http://expressjs.com/)
 application:
 
-```js
-app.get('/auth/worbli',
-  passport.authenticate('worbli'));
+    ```js
+    app.get('/auth/worbli',
+        passport.authenticate('worbli'));
 
-app.get('/auth/worbli/callback',
-  passport.authenticate('worbli', { failureRedirect: '/login' }),
-  function(req, res) {
-    // Successful authentication, redirect home.
-    res.redirect('/');
-  });
-```
+    app.get('/auth/worbli/callback',
+        passport.authenticate('worbli', { failureRedirect: '/login' }),
+        function(req, res) {
+            // Successful authentication, redirect home.
+            res.redirect('/');
+        });
+    ```
