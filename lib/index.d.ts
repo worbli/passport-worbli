@@ -10,6 +10,7 @@ export interface StrategyOption {
   clientSecret: string;
   callbackURL: string;
   scope: string;
+  state?: any;
   authorizationURL?: string;
   tokenURL?: string;
   userProfileURL?: string;
