@@ -1,0 +1,35 @@
+{
+  "name": "passport-worbli",
+  "version": "1.0.0",
+  "description": "Worbli authentication strategy for Passport.",
+  "keywords": [
+    "passport",
+    "worbli",
+    "auth",
+    "authn",
+    "authentication",
+    "identity"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/worbli/passport-worbli.git"
+  },
+  "main": "./lib",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "passport-oauth2": "^1.5.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "@types/passport": "^1.0.1",
+    "@types/passport-oauth2": "^1.4.8"
+  }
+}
