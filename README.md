@@ -2,7 +2,7 @@
 
 ## Install
 
-    $ npm install passport-facebook
+    $ npm install passport-worbli
 
 ## Usage
 
