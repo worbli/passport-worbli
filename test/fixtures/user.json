@@ -1,0 +1,27 @@
+{
+    "id": "5d9e780bad1eba0158b97c88",
+    "user": {
+        "email": "valentin+7@worbli.io",
+        "gender": "Male",
+        "fname": "Valentin",
+        "mname": "Slavov",
+        "lname": "Ivanov",
+        "dob": "1977-01-25"
+    },
+    "iddoc": {
+        "type": "national_identity_card",
+        "country": "BG",
+        "number": "640272235",
+        "date": "2020-06-16T00:00:00.000Z"
+    },
+    "addressdoc": {
+        "type": "national_identity_card",
+        "country": "BG",
+        "line1": "kv. Kazanski, bl. 25, entr. 0, fl. 2, ap. 6",
+        "line2": "",
+        "town": "Stara Zagora",
+        "state": "Stara Zagora",
+        "zip": "6000"
+    },
+    "data": true
+}
