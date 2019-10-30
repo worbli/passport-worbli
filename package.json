@@ -1,6 +1,6 @@
 {
   "name": "passport-worbli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Worbli authentication strategy for Passport.",
   "keywords": [
     "passport",
