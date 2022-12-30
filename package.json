@@ -32,7 +32,7 @@
     "@types/passport": "^1.0.1",
     "@types/passport-oauth2": "^1.4.8",
     "make-node": "0.4.6",
-    "mocha": "6.x.x",
+    "mocha": "10.x.x",
     "chai": "4.x.x",
     "chai-passport-strategy": "1.x.x",
     "proxyquire": "2.1.x"
